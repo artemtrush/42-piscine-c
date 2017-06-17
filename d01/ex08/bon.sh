@@ -1,0 +1,1 @@
+ldapsearch -LLL "cn=*bon*" cn 2> /dev/null | sed -n '/cn:/p' | wc -l | sed 's/ //g'
