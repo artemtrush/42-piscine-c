@@ -1,0 +1,24 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strncpy.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: atrush <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2016/10/03 20:04:50 by atrush            #+#    #+#             */
+/*   Updated: 2016/10/04 21:45:28 by atrush           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+char	*ft_strncpy(char *dest, char *src, unsigned int n)
+{
+	unsigned int counter;
+
+	counter = 0;
+	while (counter < n)
+	{
+		dest[counter] = src[counter];
+		counter++;
+	}
+	return (dest);
+}
